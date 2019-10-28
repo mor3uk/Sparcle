@@ -1,6 +1,8 @@
 @import './base/normalize';
 @import './base/variables';
+@import './base/mixins';
 @import './base/fonts';
+@import './base/icon-fonts';
 @import './base/base';
 
 * {
@@ -9,15 +11,37 @@
 }
 
 .section {
-    padding-left: calc(50% - 590px);
     padding-right: calc(50% - 590px);
+    padding-left: calc(50% - 590px);
+}
+
+button, a {
+	cursor: pointer;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
 }
 
 .head {
     background: url("../img/promo_back.jpg") center center / cover no-repeat;
 }
 
+@import './libs/tiny-slider';
+@import './libs/animate';
+
+@import './blocks/link';
+@import './blocks/title';
+
 @import './page-blocks/header';
 @import './page-blocks/promo';
+@import './page-blocks/service';
+@import './page-blocks/neway';
+@import './page-blocks/profy';
+@import './page-blocks/book';
+@import './page-blocks/customers';
+@import './page-blocks/questions';
+@import './page-blocks/footer';
 
 @import './media';

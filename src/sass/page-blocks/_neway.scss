@@ -1,0 +1,18 @@
+.neway {
+    &__wrapper {
+        padding-top: 135px;
+        padding-right: 73px;
+        padding-left: 99px;
+        padding-bottom: 165px;
+    }
+    &__list {
+        margin-top: 49px;
+        justify-content: space-between;
+        display: flex;
+    }
+    &__item {
+        max-width: 48%;
+        color: #b4b4b4;
+        @include descr;
+    }
+}

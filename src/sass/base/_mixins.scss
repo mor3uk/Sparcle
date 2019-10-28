@@ -1,0 +1,10 @@
+@mixin descr {
+    font-size: 14px;
+    line-height: 24px;
+    span {
+    	font-weight: 700;
+    }
+    .underline {
+    	text-decoration: underline;
+    }
+}

@@ -1,0 +1,150 @@
+.book {
+	&__wrapper {
+		padding-top: 159px;
+		padding-bottom: 162px;
+		padding-right: 73px;
+        padding-left: 99px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+    	max-width: 48%;
+    }
+    &-online {
+    	&__subtitle {
+    		font-size: 13px;
+			text-transform: uppercase;
+			color: $main-orange;
+    	}
+    	&__title {
+    		margin-top: 21px;
+    	}
+    	&__descr {
+    		margin-top: 59px;
+    		max-width: 350px;
+    		color: #676f92;
+    		@include descr;
+    	}
+    	&__type {
+    		margin-top: 66px;
+    		&-text {
+    			font-size: 14px;
+    			color: $main-orange;
+    		}
+    	}
+    	&__links {
+    		margin-top: 19px;
+    		display: flex;
+    	}
+    	&__link {
+    		color: #666e91;
+    		border-color: #666e91;
+    		&:hover {
+    			color: $main-orange;
+    			background-color: #fff9f6;
+    			border-color: $main-orange;
+    		}
+    		&:nth-child(1) {
+				margin-right: 25px;
+    		}
+    	}
+    }
+    &__numbers {
+    	margin-top: 52px;
+    	display: flex;
+        justify-content: space-between;
+    }
+    &-number {
+    	&:nth-child(1) {
+    		// margin-right: 42px;
+    	}
+    	&__text {
+    		font-size: 14px;
+    		color: $main-orange;
+    	}
+    	&__btns {
+    		margin-top: 22px;
+    		display: flex;
+    		justify-content: space-around;
+    		align-items: center;
+    		.btn_minus {
+    			line-height: 0;
+    		}
+    	}
+    	&__btn {
+    		background: transparent;
+    		border-radius: 100%;
+    		width: 34px;
+    		height: 34px;
+    		border: 1px solid #b4b4b4;
+    		font-size: 30px;
+    		color: #b4b4b4;
+    		transition-duration: .4s;
+    		text-align: center;
+    		&:hover {
+    			color: $main-orange;
+    			border-color: $main-orange;
+    		}
+    	}
+    	&__count {
+    		font-size: 14px;
+    	}
+    }
+    &-form {
+    	padding: 52px 80px;
+    	background-color: $main-blue;
+    	color: #fff;
+    	&__title {
+			color: #fff;
+    		span {
+    			margin-left: 33px;
+    			display: inline-block;
+    		}
+    	}
+    	&__time {
+    		margin-top: 18px;
+    		font-size: 12px;
+    		span {
+    			color: $main-orange;
+    		}
+    	}
+    	&__includes {
+			margin-top: 12px;
+    		font-size: 12px;
+    	}
+    	form {
+    		margin-top: 51px;
+    		display: flex;
+    		flex-direction: column;
+    		label {
+    			font-size: 10px;
+    			color: $main-orange;
+    			text-transform: uppercase;
+    		}
+    		input {
+    			padding-bottom: 8px;
+    			border-bottom: 1px solid rgba(255, 255, 255, .4);
+    			margin-top: 25px;
+    			background: transparent;
+    			color: #fff;
+    			&::placeholder {
+    				color: #fff;
+    			}
+    		}
+    		button {
+    			margin-top: 35px;
+    			padding-right: 26px;
+                text-align: left;
+    			background: url('../../icons/arrow_orange.svg') center right no-repeat;
+    			background-color: transparent;
+				color: $main-orange;
+				font-size: 20px;
+				width: 200px;
+                transition-duration: .4s;
+                &:hover {
+                    width: 215px;
+                }
+    		}
+    	}
+    }
+}

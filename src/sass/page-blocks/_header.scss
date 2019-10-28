@@ -1,6 +1,15 @@
 .header {
-    position: fixed;
+    z-index: 10;
     width: 100%;
+    transition-duration: 0.7s;
+    position: fixed;
+    &_scrolled {
+        transform: translateY(-24px);
+        background-color: rgba(36, 35, 35, .9);
+        .header__logo {
+            background: none;
+        }
+    }
     &__wrapper {
         padding-top: 24px;
         justify-content: space-between;
@@ -55,19 +64,6 @@
                     }
                 }
             }
-        }
-    }
-    &__link {
-        transition-duration: 0.5s;
-        padding: 15px 22px 12px;
-        font-size: 15px;
-        display: block;
-        color: $main-orange;
-        border-radius: 23px;
-        background-color: #fff;
-        &:hover {
-            color: #fff;
-            background-color: $main-orange;
         }
     }
     &__burger {

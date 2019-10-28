@@ -1,0 +1,41 @@
+.customers {
+	.tns-outer {
+		button {
+			display: none !important;
+		}
+	}
+	background-color: #f6f7fb;
+	&__wrapper {
+		padding-bottom: 159px;
+		padding-top: 157px;
+		padding-left: 99px;
+		padding-right: 73;
+	}
+	&__list {
+		margin-top: 60px;
+		display: flex;
+	}
+	.customer {
+		margin-top: 20px;
+		margin-right: 100px;
+		padding: 59px 63px 58px 33px;
+		width: 450px;
+		background-color: #fff;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.02);
+		&__text {
+			margin-top: 34px;
+			color: #273164;
+			font-size: 20px;
+			min-height: 140px;
+		}
+		&__name {
+			font-size: 14px;
+			color: $main-orange;
+		}
+		&__city {
+			margin-top: 8px;
+			color: #b4b4b4;
+			font-size: 14px;
+		}
+	}
+}

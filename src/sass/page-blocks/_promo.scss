@@ -1,4 +1,65 @@
 .promo {
-    height: 1000px;
     display: block;
+    &__wrapper {
+        padding-top: 280px;
+        padding-left: 70px;
+        padding-bottom: 188px;
+        color: #fff;
+    }
+    &__title {
+        max-width: 670px;
+        font-size: 65px;
+    }
+    &__descr {
+        @include descr;
+        max-width: 410px;
+        margin-top: 27px;
+    }
+    &__links {
+        margin-top: 49px;
+        display: flex;
+    }
+    &__link {
+        &:first-child {
+            margin-right: 25px;
+        }
+        span {
+            margin-right: 7px;
+            display: inline-block;
+        }
+    }
+    &__more {
+        margin-top: 187px;
+        display: flex;
+        align-items: center;
+        span {
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+        &-link {
+            width: 62px;
+            transition-duration: 0.4s;
+            margin-left: 476px;
+            height: 62px;
+            display: block;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 100%;
+            background: url("../../icons/arrow_gray.svg") 50% 50% no-repeat;
+            &:before {
+                width: 443px;
+                transform: translateY(-50%);
+                top: 50%;
+                position: relative;
+                left: -443px;
+                height: 1px;
+                display: block;
+                content: '';
+                background-color: #fff;
+            }
+            &:hover {
+                background: url("../../icons/arrow_orange.svg") 60% 50% no-repeat;
+                background-color: #fff;
+            }
+        }
+    }
 }

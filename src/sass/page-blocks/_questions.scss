@@ -1,0 +1,27 @@
+.questions {
+	padding-bottom: 159px;
+	background-color: #f6f7fb;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__title {
+		font-size: 25px;
+		text-align: center;
+	}
+	&__links {
+		margin-top: 41px;
+		display: flex;
+	}
+	&__link {
+		color: #676f92;
+		border-color: #676f92;
+		&:nth-child(1) {
+			margin-right: 25px;
+		}
+		&:hover {
+			background-color: #fff9f6;
+			color: $main-orange;
+			border-color: $main-orange;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+.link {
+    width: 160px;
+    transition-duration: 0.5s;
+    text-align: center;
+    padding: 15px 0 12px;;
+    font-size: 15px;
+    display: block;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 23px;
+    background-color: transparent;
+    &:hover {
+        color: $main-orange;
+        background-color: #fff;
+    }
+}
