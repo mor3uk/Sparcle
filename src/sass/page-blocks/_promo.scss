@@ -44,7 +44,7 @@
             display: block;
             border: 1px solid rgba(255, 255, 255, 0.4);
             border-radius: 100%;
-            background: url("../../icons/arrow_gray.svg") 50% 50% no-repeat;
+            background: url("../icons/arrow_gray.svg") 50% 50% no-repeat;
             &:before {
                 width: 443px;
                 transform: translateY(-50%);
@@ -57,7 +57,7 @@
                 background-color: #fff;
             }
             &:hover {
-                background: url("../../icons/arrow_orange.svg") 60% 50% no-repeat;
+                background: url("../icons/arrow_orange.svg") 60% 50% no-repeat;
                 background-color: #fff;
             }
         }
